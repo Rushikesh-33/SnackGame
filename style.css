@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-image: url("./assets/back.jpg");
+    background-size: 100vw 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #board
+  {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    border: #371a22 5px solid;
+    width: 100vmin;
+    height: 85vmin;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #f3ec78, #da577c);
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+
+  }
+  .snake{
+    background-color: #cc40d6;
+    border: 0.25vmin solid #371a22;
+  }
+  .head{
+    background-color: #371a22;
+
+  }
+  .food{
+    background-color: #82d10c;
+    border: 0.25vmin solid #371a22;
+  }
+  #score-container {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    z-index: 10;
+  }
+  
+  #score-label {
+    font-weight: bold;
+  }
+  
+  #score {
+    margin-left: 5px;
+  }
